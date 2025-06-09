@@ -197,7 +197,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   )
                 : ListView.builder(
-                    itemCount: 10,
+                    itemCount: _transactions.length,
                     itemBuilder: (context, index) {
                       final transaction = _transactions[index];
                       return Padding(
